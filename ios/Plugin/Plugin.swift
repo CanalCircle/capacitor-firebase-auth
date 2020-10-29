@@ -114,7 +114,7 @@ public class CapacitorFirebaseAuth: CAPPlugin {
                 return
             }
             
-            guard self.bridge.getSavedCall(callbackId) != nil else {
+            guard self.bridge!.getSavedCall(callbackId) != nil else {
                 print("Ops, there is no saved call building result")
                 return
             }
@@ -129,7 +129,7 @@ public class CapacitorFirebaseAuth: CAPPlugin {
             return
         }
 
-        guard let call = self.bridge.getSavedCall(callbackId) else {
+        guard let call = self.bridge!.getSavedCall(callbackId) else {
             print("Ops, there is no saved call building result")
             return
         }
@@ -154,7 +154,7 @@ public class CapacitorFirebaseAuth: CAPPlugin {
             return
         }
         
-        guard let call = self.bridge.getSavedCall(callbackId) else {
+        guard let call = self.bridge!.getSavedCall(callbackId) else {
             print("Ops, there is no saved call handling error")
             return
         }
