@@ -1,6 +1,6 @@
 {
 	"name": "@canalcircle/capacitor-firebase-auth",
-	"version": "2.3.3",
+	"version": "2.3.6",
 	"description": "Capacitor plugin for Firebase Authentication",
 	"main": "dist/esm/index.js",
 	"types": "dist/esm/index.d.ts",
@@ -8,8 +8,7 @@
 		"build": "npm run clean && tsc",
 		"clean": "rimraf ./dist",
 		"watch": "tsc --watch",
-		"prepublishOnly": "npm run build",
-		"postinstall": "npm run build"
+		"prepublishOnly": "npm run build"
 	},
 	"author": "Bernardo Baumblatt",
 	"license": "MIT",
@@ -39,7 +38,7 @@
 		"dist/",
 		"ios/",
 		"android/",
-		"CapacitorFirebaseAuth.podspec"
+		"CanalcircleCapacitorFirebaseAuth.podspec"
 	],
 	"keywords": [
 		"capacitor",
